@@ -1,0 +1,41 @@
+body{
+	position: relative;
+	overflow: hidden;
+}
+
+#change_margin_2{
+	z-index: 2;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.5);
+}
+#border-radius{
+	border-radius: 50%;
+	width: 298px;
+	height: 299px;
+	border: 1px white solid;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 10%;
+}
+#change_margin_2 img{
+	border-radius: 50%;
+}
+#change_margin_3{
+	display: block;
+	width: 15.625rem;
+	height: 30px;
+	border-radius: 50px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	line-height: 30px;
+	background: #0dbfdd;
+	cursor: pointer;
+	transition: 1s all;
+	margin: auto;
+}

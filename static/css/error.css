@@ -1,0 +1,66 @@
+/* 放到最后面，存在于页面，却不显示出来 */
+#span_none{
+	color: #FF0000;
+	position: absolute;
+	left: -300px;
+}
+#none1,#none2{
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+#none1,#none2 a{
+	color: #020309;	
+	text-decoration: none;
+}
+
+#none2{
+	z-index: 3;
+	display: none;
+}
+.error{
+	width: 390px;
+	height: 200px;
+	background-color: white;
+	/* cursor: pointer; */
+	border-radius: 5px;
+	font-size: 16px;
+	margin: auto;
+	margin-top: 15%;
+}
+.error img{
+	display: block;
+	width: 60px;
+	margin: auto;
+	/* margin-top: 10px; */
+	padding-top: 0.625rem;
+}
+.error p{
+	padding: 1.875rem 1.25rem 0 1.25rem;
+	text-align: center;
+}
+#border-ok1,#border-ok2{
+	display: block;
+	width: 70px;
+	height: 30px;
+	background-color: #0dbfdd;
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+
+/* 测试代码的样式 */
+/* #p1,#p2{
+	background-color: #0CB3D0;
+	width: 60px;
+	margin: 1.875rem;;
+} */

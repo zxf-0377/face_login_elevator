@@ -1,0 +1,183 @@
+/*重置样式*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+.body-img1,.body-img2 {
+    font-family: "微软雅黑";	
+	width: 100%;
+	height: 100%;
+}
+.body-img1{
+	background: -o-linear-gradient(45deg, #001b301, #004370);
+	
+	background: -moz-linear-gradient(45deg, #001b301, #004370);
+	
+	background: -ms-linear-gradient(45deg, #001b301, #004370);
+	
+	background: linear-gradient(45deg, #001b301, #004370);
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#001b301, endColorstr=#004370);
+	
+	background: -webkit-linear-gradient(45deg, #020309, #004370);
+}
+.body-img2{
+	background: -o-linear-gradient(45deg, #020309, #004370);
+	
+	background: -moz-linear-gradient(45deg, #020309, #004370);
+	
+	background: -ms-linear-gradient(45deg, #020309, #004370);
+	
+	background: linear-gradient(45deg, #020309, #004370);
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#020309, endColorstr=#004370);
+	
+	background: -webkit-linear-gradient(45deg, #020309, #004370);
+	/* background-image: radial-gradient(#014a7d,#010006);	 */
+}
+
+/* 背景图 */
+.bg-i{
+	height: 90%;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	z-index: -100;
+}
+.padding-left{
+	padding-left: 5%;
+	height: 95%;
+	position: absolute;
+	left: 2%;
+	top: 3%;
+}
+
+
+/*header*/
+.header-line {
+    width: 100%;
+    height: 4px;
+    background: #0dbfdd;
+}
+/*content*/
+.content {
+	margin-top: 15%;
+	border-radius: 10px;
+    width: 25%;
+	float: right;
+    margin-right: 10%;
+    text-align: center;
+	color: white;
+	background-color: rgba(255,255,255,0.3);
+	padding-bottom: 15px;
+	position: static;
+}
+.content-logo {
+    width: 270px;
+    height: 80px;
+}
+.content-title {
+    margin: 0px 0 10px 0;
+	padding-top: 30px;
+    font-size: 1.8em;
+    color: white;
+    font-weight: normal;
+}
+.content-form {
+    width: 100%;
+    padding: 36px 0 10px;
+    /* border: 1px solid  #dedede; */
+    text-align: center;
+}
+.content-form form div {
+    margin-bottom: 19px;
+}
+		/* 用户组字体改动 */
+.span{
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+
+.content-form form .user,
+.content-form form .password {
+    width: 60%;
+    height: 8px;    /* 宽度和高度都有改变 */
+    padding: 10px; 
+    font-size: 1em;
+    border: 1px solid  #cccbcb;
+    border-radius: 7px;
+    letter-spacing: 1px;
+	font-size: 14px;
+	font-family: "黑体";
+	padding-bottom: 15px;
+}
+
+.content-form form input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 5px #0dbfdd;
+    box-shadow: 0 0 5px #0dbfdd;
+}
+.content-form-signup {
+    width: 15.625rem;
+	height: 30px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+	line-height: 30px;
+    background: #0dbfdd;
+    cursor: pointer;
+	transition: 1s all;
+}
+.content-form-signup:hover {
+
+    background: rgb(227,79,0);
+}
+.content-form-signup:focus {
+    outline: none;
+    border: 1px solid  #0cb3d0;
+}
+.content-login-description {
+    margin-top: 5px;
+    line-height: 1.63636364;
+    color: white;
+    font-size: .91666667rem;
+}
+.content-login-link {
+    font-size: 16px;
+    color: #0dbfdd;
+    text-decoration: none;
+}
+
+/*输入框无内容便提示*/
+#remind_1,
+#remind_2 {
+    width: 76%;
+    margin: 0 auto 2px;
+    text-align: left;
+    font-size: .2em;
+    color: #f00;
+}
+#change_margin_2{
+	width: 100%;
+	height: 60%;
+}
+#display1{
+	z-index: 2;
+	position:absolute;
+	left: 50%;
+	top: 65%;
+	margin: 0 0 0 -7.8125rem;
+}
+#img{
+	width: 30px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}

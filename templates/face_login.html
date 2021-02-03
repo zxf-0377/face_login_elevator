@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人脸登陆</title>
+    <link rel="stylesheet" href="../static/css/user_form.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/shibie.css"/>
+</head>
+<body class="body-img2">
+
+<div class="content">
+	<img src="../static/img/登录.png" class="bg-i padding-left">
+    <h1 class="content-title">账 户 登 陆</h1>
+    <div class="content-form">
+        <form method="post"  action="/face/query" enctype="multipart/form-data" >
+            <div id="change_margin_1">
+                用户组： <input class="user" type="text"  name="ugroup" autofocus="autofocus"  required="required" >
+            </div>
+            <p id="remind_2"></p>
+			<span id="change_margin_3" onclick="aa1()" >拍照</span>
+			<div id="change_margin_2" >
+				<img src="../static/img/错误.png" id="img" onclick="aa2()">
+				<div id="border-radius" >
+					<img src="{{ url_for('video_feed') }}" width="300" height="300">
+				</div>
+				 <input class="content-form-signup " id="display1" type="submit" value="登陆" >
+			</div>
+        </form>
+    </div>
+    <div class="content-login-description">还没有账户？</div>
+    <div><a class="content-login-link" href="face_insert.html">注册</a></div>
+</div>
+
+</body>
+<script type="text/javascript">
+	function aa1(){
+		var aa1=window.document.getElementById("change_margin_2");
+		aa1.style.display="block";
+	}
+	function aa2(){
+		var aa1=window.document.getElementById("change_margin_2");
+		aa1.style.display="none";
+	}
+</script>
+</html>

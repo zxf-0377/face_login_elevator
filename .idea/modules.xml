@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../contactless_elevator(定版)/.idea/contactless_elevator(定版).iml" filepath="$PROJECT_DIR$/../contactless_elevator(定版)/.idea/contactless_elevator(定版).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/face_login.iml" filepath="$PROJECT_DIR$/.idea/face_login.iml" />
+    </modules>
+  </component>
+</project>

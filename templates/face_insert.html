@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人脸注册</title>
+    <link rel="stylesheet" href="../static/css/user_form.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/error.css"/>
+</head>
+<body class="body-img2">
+	<img src="../static/img/太空人素材.png" class="bg-i" >
+	<div class="content">
+		<h1 class="content-title"> 创 建 账 户</h1>
+		<div class="content-form">
+			<form method="post"  action="/face/insert" enctype="multipart/form-data">
+				<div id="change_margin_1">
+					<span class="span">用户名：</span><input class="user" type="text"  name="uid" autofocus="autofocus" placeholder="给自己定义一个名字!" required="required">
+				</div>
+				<div id="change_margin21">
+				   <span class="span">用户组：</span> <input class="user" type="text"  name="ugroup" required="required">
+				</div>
+				<div id="change_margin_3">
+				   用户人脸： <input class="use" type="file" name="imagefile" style="width:160px;border: 0px;" />
+				</div>
+				<!-- input的value为空时弹出提醒 -->
+				<p id="remind_2"></p>
+				<div id="change_margin_4">
+					<input class="content-form-signup" type="submit" value="创建账户">
+					<!--<p id="woring" style="color: coral; font-size: 14px;font-weight: bold;">提示：注册成功自动跳转登陆页面！</p>-->
+				</div>
+			</form>
+		</div>
+		<div class="content-login-description">已经拥有账户？</div>
+		<div><a class="content-login-link" href="face_login.html">登录</a></div>
+	</div>	
+	<span id="span_none">{{ request_one }}</span>
+	<!-- 			测试代码 			-->
+<!-- 	<p id="p1">正确</p>
+	<p id="p2">错误</p> -->
+	<!-- 								 -->
+	
+	<div id="none1">
+		<div class="error">
+			<img src="../static/img/警告.png" >
+			<p>您提交的照片没有识别到人脸信息，请重新选择照片！</p>
+			<span id="border-ok1">确定</span>
+		</div>
+	</div>
+	<div id="none2">
+		<div class="error">
+			<img src="../static/img/成功.png" >
+			<p>您已注册成功，点击确定跳转！</p>
+			<span id="border-ok2"><a href="face_login.html">确定</a></span>
+		</div>
+	</div>
+	<!--  -->
+</body>
+<script type="text/javascript">
+	// 判断传入的数据文本内容
+	function text(){
+		var vluer=document.getElementById("span_none").innerText;
+		console.log(vluer);
+		if (vluer=="sucess") {
+			document.getElementById("none2").style.display="block";
+			document.getElementById("span_none").innerText=" ";
+		} else if (vluer=="error") {
+			document.getElementById("none1").style.display="block";
+			document.getElementById("span_none").innerText=" ";
+		}
+	}
+	// 计时器每隔一段时间执行一次，来判断
+	// setInterval(text,100);
+	text();
+	// 取消在页面显示
+	document.getElementById("border-ok1").onclick=function(){
+		document.getElementById("none1").style.display="none";
+	}
+	
+	
+	//测试代码
+	// document.getElementById("p1").onclick=function (){
+	// 	document.getElementById("span_none").innerText=" ";
+	// 	document.getElementById("span_none").innerText="sucess";
+	// }
+	// document.getElementById("p2").onclick=function (){
+	// 	document.getElementById("span_none").innerText=" ";
+	// 	document.getElementById("span_none").innerText="error";
+	// }
+	 
+</script>
+</html>
